@@ -83,20 +83,24 @@
                     </div>
                 </div>
 
-                <h5 class="my-2 py-1"><b>Rates</b> </h5>
                 <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 mb-4 ">
-                            <label for="number">Bounce Rate</label>
-                            <input type="number" class="form-control" id="firstName" placeholder="" name="bounce"
-                                value="" required="">
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <label for="Time">Exit Rate</label>
-                            <input type="number" inputmode="decimal" class="form-control" id="lastName" placeholder=""
-                                name="exit" value="" required="">
-                        </div>
-                    </div>
+                    <label for="country">
+                        <h5 class="my-4 py-0"><b>Visitor Type (Ranges from 0 to 1)</b> </h5>
+                    </label>
+                    <input type="number" inputmode="decimal" class="form-control" id="lastName" placeholder=""
+                        name="spec_day" value="" required="">
+                </div>
+
+                <div class="container">
+                    <label for="country">
+                        <h5 class="my-4 py-0"><b>Special Day</b> </h5>
+                    </label>
+                    <select class="custom-select d-block w-100" id="country" name='spec_day' required="">
+                        <option value="">Choose...</option>
+                        <option>Returning Visitor</option>
+                        <option>New Visitor</option>
+                        <option>Other</option>
+                    </select>
                 </div>
 
                 <h5 class="my-2 py-1"><b>Page Value</b> </h5>
@@ -107,12 +111,31 @@
                         required="">
                 </div>
 
+                <div class="container">
+                    <label for="country">
+                        <h5 class="my-4 py-0"><b>Region</b> </h5>
+                    </label>
+                    <select class="custom-select d-block w-100" id="country" name='month' required="">
+                        <option value="">Choose...</option>
+                        <option>United States</option>
+                        <option>Germany</option>
+                        <option>India</option>
+                        <option>France</option>
+                        <option>United Kingdom</option>
+                        <option>Brazil</option>
+                        <option>Italy</option>
+                        <option>Austalia</option>
+                        <option>Spain</option>
+
+                    </select>
+                </div>
+
 
                 <div class="container">
                     <label for="country">
                         <h5 class="my-4 py-0"><b>Month</b> </h5>
                     </label>
-                    <select class="custom-select d-block w-100" id="country" nmae='month' required="">
+                    <select class="custom-select d-block w-100" id="country" name='month' required="">
                         <option value="">Choose...</option>
                         <option>January</option>
                         <option>February</option>
